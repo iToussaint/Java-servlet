@@ -1,0 +1,231 @@
+body {
+  box-sizing: border-box;
+  padding-top: 70px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(10, 10, 10);
+}
+
+.vertical {
+  height: 20px;
+  width: 3px;
+  background-color: rgb(20, 20, 20);
+  border-radius: 5px;
+  position: absolute;
+}
+.horizontal {
+  height: 3px;
+  width: 20px;
+  background-color: rgb(20, 20, 20);
+  position: absolute;
+  border-radius: 5px;
+}
+
+.showAddForm {
+  padding: 20px 30px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 5px rgb(117, 117, 117);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.35s;
+  background-color: white;
+}
+.showAddForm:hover {
+  box-shadow: 5px 5px 5px rgb(117, 117, 117);
+  /* background-color: rgb(230, 230, 230); */
+}
+
+.hideFormBtn {
+  transform: translateX(43em) rotate(45deg);
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  padding: 25px;
+  pointer-events: auto;
+}
+
+header {
+  background-color: gray;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  z-index: 100;
+}
+main {
+  margin: 30px;
+  min-height: 80vh;
+  border-radius: 20px;
+  padding: 20px;
+  border: 2px solid black;
+  column-gap: 30px;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+}
+
+.left {
+  border-radius: 10px;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.select,
+.discard_select,
+.delete {
+  padding: 10px 30px;
+  background-color: rgb(230, 230, 230);
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  
+}
+.discard_select,
+.delete {
+  display: none;
+  
+}
+.select:hover,
+.discard_select:hover,
+.delete:hover {
+  background-color: rgb(220, 220, 220);
+}
+
+.search_form {
+  display: flex;
+}
+.search_form input {
+  margin-right: -1px;
+  outline: none;
+  padding: 12px;
+  width: 350px;
+  border-radius: 50px 0 0 50px;
+  border: 1px solid rgb(180, 180, 180);
+}
+.search_form button {
+  margin: -1px;
+  overflow: hidden;
+  padding: 0 15px;
+  border: 1px solid rgb(200, 200, 200);
+  border-radius: 0 50px 50px 0;
+  cursor: pointer;
+}
+table tr td:first-child,
+table tr th:first-child {
+  display: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+.sort_by_inputField {
+  padding: 15px;
+  border: none;
+  outline: none;
+}
+
+.sort_form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  width: max-content;
+  margin: 100px 20px;
+}
+
+.dropdown_icon_clicked {
+  transform: rotate(-180deg);
+}
+
+.dropdown_icon {
+  transition: all 0.35s;
+}
+
+.options_div_hidden {
+  padding: 10px;
+  transition: all 0.35s;
+  overflow: hidden;
+  height: 0;
+  padding: 0;
+}
+
+.options_div_revealed {
+  border: 2px solid rgb(218, 218, 218);
+  padding: 10px;
+  height: 228px;
+  transform-origin: top;
+  transition: all 0.35s;
+}
+
+.sort_by_option {
+  padding: 15px;
+  margin: 0;
+  cursor: pointer;
+}
+
+.sort_by_option:hover {
+  background-color: rgb(230, 230, 230);
+}
+.sort_by_inputField_div {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(180, 180, 180);
+  transition: all 0.35s ease-in-out;
+  border-radius: 5px;
+  padding: 0 10px;
+}
+
+.sort_by_inputField_div:hover {
+  border: 2px solid blue;
+}
+
+.filter_by_gender_div {
+  border: 2px solid rgb(218, 218, 218);
+}
+
+.filter_by_gender_dropdown_div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+  cursor: pointer;
+}
+.gender_radios_hidden {
+  display: flex;
+  flex-direction: column;
+
+  height: 0;
+  overflow: hidden;
+  transition: all 0.35s;
+}
+.gender_radio {
+  padding: 10px;
+}
+.gender_radio input {
+  cursor: pointer;
+  margin-right: 10px;
+}
+.gender_radio:hover {
+  background-color: rgb(230, 230, 230);
+}
+
+.filter_by_gender_dropdown_icon {
+  transition: all 0.35s;
+}
+.filter_by_gender_dropdown_icon_rotated {
+  transform: rotate(-180deg);
+}
+.gender_radios_revealed {
+  height: 140px;
+  padding: 10px;
+}
+
+.disabled {
+  pointer-events: none;
+}

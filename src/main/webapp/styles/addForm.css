@@ -1,0 +1,63 @@
+.addFormHidden {
+  background-color: green;
+  background: rgb(237, 237, 237, 0.3);
+  backdrop-filter: blur(10px);
+  margin: auto;
+  width: 0;
+  height: 450px;
+  padding: 0;
+  wmin-height: 0;
+  min-width: 0;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 15px;
+  border-radius: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  transition: all 0.5s;
+  position: absolute;
+  bottom: 250px;
+  right: 550px;
+  z-index: 10;
+  box-shadow: 2px 2px 5px rgb(117, 117, 117);
+  transform-origin: center;
+  transform: scaleY(0);
+}
+.addFormShown {
+  transform: scaleY(1);
+  padding: 20px;
+  width: 500px;
+  z-index: 80;
+}
+
+.addForm input,
+.addForm select {
+  display: block;
+  padding: 15px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(228, 228, 228);
+}
+
+.addBtn {
+  padding: 15px;
+  width: 50%;
+  margin: auto;
+  border-radius: 20px;
+  border: none;
+  font-weight: bold;
+  margin-top: 15px;
+  cursor: pointer;
+  background-color: rgb(228, 228, 228);
+  transition: all 0.35s;
+}
+
+.addBtn:hover {
+  background-color: rgb(219, 219, 219);
+}
+
+.addFormHeading {
+  text-align: center;
+}

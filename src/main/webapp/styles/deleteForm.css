@@ -1,0 +1,48 @@
+.hiddenDeleteForm {
+  background-color: rgb(230, 230, 230);
+  padding: 20px;
+  transform: scaleY(0);
+  width: max-content;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  position: absolute;
+  transition: all 0.35s;
+  z-index: 200;
+}
+
+.revealedDeleteForm {
+  transform: scaleY(1);
+  z-index: 200;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons .btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: green;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.35s;
+}
+
+
+
+.id-field {
+  width: 50px;
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+.cancel-btn:hover,
+.delete-btn:hover {
+  opacity: 0.75;
+}

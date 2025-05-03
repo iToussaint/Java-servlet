@@ -1,0 +1,49 @@
+.viewFormHidden {
+  background: rgb(237, 237, 237, 0.3);
+  backdrop-filter: blur(10px);
+
+  padding: 20px;
+  width: 500px;
+  height: 400px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 15px;
+  border-radius: 10px;
+  white-space: nowrap;
+  transition: all 0.5s;
+  box-shadow: 2px 2px 5px rgb(117, 117, 117);
+}
+
+.hide_view_form {
+  padding: 30px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 5px rgb(117, 117, 117);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.35s;
+  background-color: white;
+  rotate: 45deg;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+.view_form_div_hidden {
+  width: max-content;
+  position: absolute;
+  top: -1050px;
+  right: 535px;
+  transition: all 0.35s;
+  margin: auto;
+}
+
+.view_form_div_shown {
+  width: max-content;
+  top: 90px;
+  z-index: 80;
+  margin: auto;
+}
